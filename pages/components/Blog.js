@@ -4,10 +4,11 @@ import { HiHeart, HiEye } from 'react-icons/hi'
 import { AiOutlineLogout } from 'react-icons/ai'
 import Loading from './Loading'
 import { getSession } from "next-auth/react";
+import axios from "axios";
 
 export default function Blog({fetchData,handlChange,handlKeyDownSearch,handleSignOut,formatNumber,nextphotos,handleLike}) {
 
-      console.log(nextphotos);
+      
 
     
 
@@ -55,14 +56,6 @@ export default function Blog({fetchData,handlChange,handlKeyDownSearch,handleSig
   
 }
 
-export const getStaticProps = async () => {
-  const res = await axios.get(`${apiEndPoint}/photos/random?client_id=${clientId}&count=30`)
-  const { data } = res
-  return {
-    props: {
-      data
-    }
-  }
-}
+
 
 

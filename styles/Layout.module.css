@@ -1,0 +1,8 @@
+.imgStyle{
+    @apply rounded-l-md;
+    position: relative;
+    overflow: hidden;
+}
+
+
+

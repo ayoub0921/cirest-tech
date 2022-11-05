@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
                         {children}
                     </div>
                 </div>
-                <div className=' bg-white flex items-center justify-center h-full'>
+                <div className=' bg-white flex items-center justify-center h-full max-[667px]:hidden'>
                     <Image src={loginImage}/>
                 </div>
             </div>
